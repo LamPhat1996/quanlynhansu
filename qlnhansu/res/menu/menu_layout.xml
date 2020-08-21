@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    tao item quan tam toi 3 thứ ( 1 là name, 2 là icon, 3 là  ID,-->
+    <!--        always luôn luôn hiện ra trên thanh menu, ifRoom hiện ra nếu trên thanh tabbar còn chổ trống-->
+    <item
+        android:id="@+id/menuItemUpdate"
+        android:icon="@mipmap/ic_update_black"
+        android:title="@string/update"
+        app:showAsAction="ifRoom">
+        ></item>
+    <item
+        android:id="@+id/menuItemRemove"
+        android:icon="@mipmap/ic_delete_black_24dp"
+        android:title="@string/xoa"
+        app:showAsAction="ifRoom">
+        ></item>
+    <item
+        android:id="@+id/menuItemSave"
+        android:icon="@mipmap/ic_save_black_24dp"
+        android:title="@string/save"
+        app:showAsAction="ifRoom">
+        ></item>
+</menu>

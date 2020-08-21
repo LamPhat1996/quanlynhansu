@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">QuanLyNhanSu</string>
+    <string name="add">Them</string>
+    <string name="exit">Thoat</string>
+    <string name="name">Ho va ten: </string>
+    <string name="bangcap">Bang Cap: </string>
+    <string name="TC">Trung Cap</string>
+    <string name="CD">Cao Dang</string>
+    <string name="DH">Dai Hoc</string>
+    <string name="sothich">So Thich: </string>
+    <string name="DocSach">Doc Sach</string>
+    <string name="XemPhim">Xem Phim</string>
+    <string name="Khac">Khac: </string>
+    <string name="xoa">xoa</string>
+    <string name="update">update</string>
+    <string name="save">save</string>
+</resources>

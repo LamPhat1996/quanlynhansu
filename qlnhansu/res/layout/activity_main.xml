@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        style="@style/LinerLayoutOutSide"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/LinerLayoutInSide"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"></TextView>
+
+            <EditText
+                android:id="@+id/edtHoVaTen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinerLayoutInSide"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bangcap"></TextView>
+
+            <RadioGroup
+                android:id="@+id/GroupRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdbTrungCap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/TC"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rdbCaoDang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/CD"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rdbDaiHoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/DH"></RadioButton>
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinerLayoutInSide"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sothich"></TextView>
+
+            <CheckBox
+                android:id="@+id/ckbDocSach"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/DocSach"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/ckbXemPhim"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/XemPhim"></CheckBox>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinerLayoutInSide"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Khac"></TextView>
+
+            <EditText
+                android:id="@+id/edtKhac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LinerLayoutOutSide"
+        android:layout_weight="4">
+
+        <ListView
+            android:id="@+id/ListMembers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LinerLayoutOutSide"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/color_clickbutton"
+            android:text="@string/add"
+            android:drawableLeft="@mipmap/icons8_add_new_30px"></Button>
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/color_clickbutton"
+            android:text="@string/exit"
+            android:drawableRight="@mipmap/icons8_exit_26px"></Button>
+    </LinearLayout>
+
+</LinearLayout>
